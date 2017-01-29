@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginVC.swift
 //  ForgetMeNot
 //
 //  Created by Dan Lindsay on 2017-01-28.
@@ -10,7 +10,7 @@ import UIKit
 import pop
 
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
