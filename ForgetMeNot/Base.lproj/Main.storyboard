@@ -97,6 +97,11 @@
                             <constraint firstItem="jbF-2P-a5h" firstAttribute="top" secondItem="5bM-Vx-glq" secondAttribute="bottom" constant="50" id="yFE-qO-gVS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailConstraint" destination="iof-dd-kG3" id="mqN-nB-QTs"/>
+                        <outlet property="loginConstraints" destination="ncc-zG-SGW" id="3aT-2v-SfD"/>
+                        <outlet property="passwordConstraint" destination="QuR-FO-hJ7" id="226-2U-brm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
