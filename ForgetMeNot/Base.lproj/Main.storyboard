@@ -138,6 +138,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="yesPressedWithSender:" destination="fj3-Oe-c3C" eventType="touchUpInside" id="xyw-da-eHo"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPL-UP-DXd" customClass="CustomButton" customModule="ForgetMeNot" customModuleProvider="target">
                                 <rect key="frame" x="20" y="662" width="111" height="45"/>
@@ -155,14 +158,17 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="noPressedWithSender:" destination="fj3-Oe-c3C" eventType="touchUpInside" id="xTj-gl-Vjd"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVN-b7-pFV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVN-b7-pFV">
                                 <rect key="frame" x="20" y="65" width="374" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="RZE-6a-WYD"/>
                                     <constraint firstAttribute="width" constant="374" id="kQH-g8-0Ia"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -177,6 +183,11 @@
                             <constraint firstItem="lde-HN-mLS" firstAttribute="top" secondItem="CPL-UP-DXd" secondAttribute="bottom" constant="29" id="kro-Er-Yzd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noBtn" destination="CPL-UP-DXd" id="pUT-C0-sTH"/>
+                        <outlet property="titleLbl" destination="pVN-b7-pFV" id="w0b-n1-DrH"/>
+                        <outlet property="yesBtn" destination="CJm-X7-fQR" id="mQN-ov-zW9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UW2-oL-l0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -4,7 +4,7 @@
 //
 //  Created by Dan Lindsay on 2017-01-30.
 //  Copyright © 2017 Dan Lindsay. All rights reserved.
-//
+// All images from FreePik.com
 
 import UIKit
 
@@ -34,6 +34,7 @@ class Card: UIView {
     }
     
     func setupView() {
+        self.layer.cornerRadius = cornerRadius
         self.layer.shadowOpacity = 0.8
         self.layer.shadowRadius = 5.0
         self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)

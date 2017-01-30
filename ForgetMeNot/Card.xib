@@ -29,6 +29,11 @@
                 <constraint firstItem="y1H-ZY-wgi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dYb-Lm-4jC"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="shapeImage" destination="y1H-ZY-wgi" id="2c6-j5-occ"/>
             </connections>
