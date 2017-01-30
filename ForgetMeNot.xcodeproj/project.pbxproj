@@ -17,6 +17,8 @@
 		7B3448DB1E3D4FBE0096A129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3448D91E3D4FBE0096A129 /* LaunchScreen.storyboard */; };
 		7BA871BC1E3EBFED005CE8E1 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA871BB1E3EBFED005CE8E1 /* GameVC.swift */; };
 		7BAA21721E3D6A1100D10638 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAA21711E3D6A1100D10638 /* CustomButton.swift */; };
+		7BF19DB71E3FABF20060E607 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF19DB61E3FABF20060E607 /* Card.swift */; };
+		7BF19DBB1E3FAC2A0060E607 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BF19DBA1E3FAC2A0060E607 /* Card.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		7B3448DC1E3D4FBE0096A129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BA871BB1E3EBFED005CE8E1 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		7BAA21711E3D6A1100D10638 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		7BF19DB61E3FABF20060E607 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7BF19DBA1E3FAC2A0060E607 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 		A6DF56B6D4511CA95222CA50 /* Pods_ForgetMeNot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForgetMeNot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,8 @@
 			children = (
 				7B03700C1E3D5AF600721F19 /* CustomTextField.swift */,
 				7BAA21711E3D6A1100D10638 /* CustomButton.swift */,
+				7BF19DB61E3FABF20060E607 /* Card.swift */,
+				7BF19DBA1E3FAC2A0060E607 /* Card.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 				7B3448DB1E3D4FBE0096A129 /* LaunchScreen.storyboard in Resources */,
 				7B3448D81E3D4FBE0096A129 /* Assets.xcassets in Resources */,
 				7B3448D61E3D4FBE0096A129 /* Main.storyboard in Resources */,
+				7BF19DBB1E3FAC2A0060E607 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +268,7 @@
 			files = (
 				7BAA21721E3D6A1100D10638 /* CustomButton.swift in Sources */,
 				7B3448D31E3D4FBE0096A129 /* LoginVC.swift in Sources */,
+				7BF19DB71E3FABF20060E607 /* Card.swift in Sources */,
 				7B3448D11E3D4FBE0096A129 /* AppDelegate.swift in Sources */,
 				7B2E28EC1E3EA6010074B7F0 /* AnimationEngine.swift in Sources */,
 				7BA871BC1E3EBFED005CE8E1 /* GameVC.swift in Sources */,

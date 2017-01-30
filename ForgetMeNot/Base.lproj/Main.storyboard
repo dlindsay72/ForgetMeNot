@@ -83,6 +83,9 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="fj3-Oe-c3C" kind="show" id="LTW-w3-Fob"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -105,7 +108,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-314.49275362318843" y="86.413043478260875"/>
+            <point key="canvasLocation" x="-509" y="92"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="fXu-Kn-b4b">
+            <objects>
+                <viewController id="fj3-Oe-c3C" customClass="GameVC" customModule="ForgetMeNot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D2y-wy-pc9"/>
+                        <viewControllerLayoutGuide type="bottom" id="lde-HN-mLS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fMd-LW-ohd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJm-X7-fQR" customClass="CustomButton" customModule="ForgetMeNot" customModuleProvider="target">
+                                <rect key="frame" x="283" y="662" width="111" height="45"/>
+                                <color key="backgroundColor" red="0.07223144918680191" green="0.32701888680458069" blue="0.50498437881469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="PxK-yq-ptl"/>
+                                    <constraint firstAttribute="width" constant="111" id="xKc-Jv-PIO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPL-UP-DXd" customClass="CustomButton" customModule="ForgetMeNot" customModuleProvider="target">
+                                <rect key="frame" x="20" y="662" width="111" height="45"/>
+                                <color key="backgroundColor" red="0.072231449190000005" green="0.32701888680000002" blue="0.50498437880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="Epf-wk-5sg"/>
+                                    <constraint firstAttribute="height" constant="45" id="W79-9V-tvJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVN-b7-pFV">
+                                <rect key="frame" x="20" y="65" width="374" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="RZE-6a-WYD"/>
+                                    <constraint firstAttribute="width" constant="374" id="kQH-g8-0Ia"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CPL-UP-DXd" firstAttribute="leading" secondItem="fMd-LW-ohd" secondAttribute="leading" constant="20" id="4sw-dQ-9bP"/>
+                            <constraint firstItem="lde-HN-mLS" firstAttribute="top" secondItem="CJm-X7-fQR" secondAttribute="bottom" constant="29" id="FPg-BF-3r0"/>
+                            <constraint firstAttribute="trailing" secondItem="CJm-X7-fQR" secondAttribute="trailing" constant="20" id="HoN-Hb-fr4"/>
+                            <constraint firstItem="pVN-b7-pFV" firstAttribute="centerX" secondItem="fMd-LW-ohd" secondAttribute="centerX" id="QYQ-5r-KFa"/>
+                            <constraint firstItem="pVN-b7-pFV" firstAttribute="top" secondItem="D2y-wy-pc9" secondAttribute="bottom" constant="45" id="ebQ-H5-gLD"/>
+                            <constraint firstItem="lde-HN-mLS" firstAttribute="top" secondItem="CPL-UP-DXd" secondAttribute="bottom" constant="29" id="kro-Er-Yzd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UW2-oL-l0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195.6521739130435" y="91.304347826086968"/>
         </scene>
     </scenes>
     <resources>
