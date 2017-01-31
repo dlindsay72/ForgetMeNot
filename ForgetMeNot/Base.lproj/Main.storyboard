@@ -172,10 +172,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmv-v7-0vl">
+                                <rect key="frame" x="113" y="138" width="188" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="p6I-CJ-Q9v"/>
+                                    <constraint firstAttribute="width" constant="188" id="q1N-Qo-Inz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mmv-v7-0vl" firstAttribute="centerX" secondItem="fMd-LW-ohd" secondAttribute="centerX" id="4pk-Sk-ju4"/>
                             <constraint firstItem="CPL-UP-DXd" firstAttribute="leading" secondItem="fMd-LW-ohd" secondAttribute="leading" constant="20" id="4sw-dQ-9bP"/>
+                            <constraint firstItem="mmv-v7-0vl" firstAttribute="top" secondItem="pVN-b7-pFV" secondAttribute="bottom" constant="20" id="5nn-by-h59"/>
                             <constraint firstItem="lde-HN-mLS" firstAttribute="top" secondItem="CJm-X7-fQR" secondAttribute="bottom" constant="29" id="FPg-BF-3r0"/>
                             <constraint firstAttribute="trailing" secondItem="CJm-X7-fQR" secondAttribute="trailing" constant="20" id="HoN-Hb-fr4"/>
                             <constraint firstItem="pVN-b7-pFV" firstAttribute="centerX" secondItem="fMd-LW-ohd" secondAttribute="centerX" id="QYQ-5r-KFa"/>
@@ -185,6 +197,7 @@
                     </view>
                     <connections>
                         <outlet property="noBtn" destination="CPL-UP-DXd" id="pUT-C0-sTH"/>
+                        <outlet property="timerLbl" destination="mmv-v7-0vl" id="yBy-aL-VRo"/>
                         <outlet property="titleLbl" destination="pVN-b7-pFV" id="w0b-n1-DrH"/>
                         <outlet property="yesBtn" destination="CJm-X7-fQR" id="mQN-ov-zW9"/>
                     </connections>

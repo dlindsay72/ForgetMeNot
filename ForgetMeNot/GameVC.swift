@@ -14,9 +14,14 @@ class GameVC: UIViewController {
     @IBOutlet weak var yesBtn: CustomButton!
     @IBOutlet weak var noBtn: CustomButton!
     @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var timerLbl: UILabel!
     
     var currentCard: Card!
-    
+    var previousCard: Card!
+    var totalTime = 59
+    var countdownTimer: Timer!
+    var correctGuesses = 0
+    var incorrectGuesses = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +30,25 @@ class GameVC: UIViewController {
         currentCard.center = AnimationEngine.screenCenterPosition
         self.view.addSubview(currentCard)
         
+        
+    }
+    
+    func startTimer() {
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    func endTimer() {
+        countdownTimer.invalidate()
+    }
+    
+    func updateTime() {
+        timerLbl.text = "\(timeFormatted(totalTime))"
+        
+        if totalTime != 0 {
+            totalTime -= 1
+        } else {
+            countdownTimer.invalidate()
+        }
     }
     
     func createCardFromNib() -> Card? {
@@ -37,13 +61,17 @@ class GameVC: UIViewController {
     }
     
     @IBAction func yesPressed(sender: UIButton) {
+        
         if sender.titleLabel?.text == "YES" {
             checkAnswer()
         } else {
             titleLbl.text = "Does this card match the previous?"
+            startTimer()
+            
         }
         showNextCard()
     }
+    
     
     @IBAction func noPressed(sender: UIButton) {
         checkAnswer()
@@ -81,7 +109,22 @@ class GameVC: UIViewController {
         
     }
     
+    func timeFormatted(_ totalSeconds: Int) -> String {
+        let seconds: Int = totalSeconds % 60
+        let minutes: Int = (totalSeconds / 60) % 60
+        //     let hours: Int = totalSeconds / 3600
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
+    
     func checkAnswer() {
+        
+    }
+    
+    func endGame() {
+        
+    }
+    
+    func replay() {
         
     }
 
